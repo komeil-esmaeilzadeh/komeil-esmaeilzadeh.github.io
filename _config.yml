@@ -58,3 +58,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+# Outputting
+permalink: /:categories/:title/
+paginate_path: /page:num/
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+
+# Header / Navigation
+breadcrumbs: false
