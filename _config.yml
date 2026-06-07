@@ -1,0 +1,60 @@
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"
+
+# Site Settings
+locale: "en-GB"
+title: "Komeil Esmaeilzadeh"
+title_separator: "|"
+subtitle: "Senior Engineering Leader · Energy & Capital Investments"
+name: "Komeil Esmaeilzadeh"
+description: "Personal site of Komeil Esmaeilzadeh — senior engineering leader working in renewable fuels, capital investments, and energy infrastructure."
+url: "https://komeil-esmaeilzadeh.github.io"
+repository: "komeil-esmaeilzadeh/komeil-esmaeilzadeh.github.io"
+search: true
+
+# Author profile shown in the sidebar
+author:
+  name: "Komeil Esmaeilzadeh"
+  avatar:
+  bio: "Senior engineering leader. Renewable fuels, capital investments, energy infrastructure. Currently at Neste, completing an Executive MBA."
+  location: "Porvoo, Finland"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/komeil-esmaeilzadeh"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:komeilesmailzadeh@gmail.com"
+
+# Build settings
+markdown: kramdown
+paginate: 5
+paginate_path: /page:num/
+timezone: Europe/Helsinki
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Defaults applied to all pages and posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
